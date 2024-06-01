@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Movie Ticket</title>
+  <link rel="stylesheet" href="css/ticket.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html" class="logo">
+          <img src="src/Logo-TIX-F_blanco.png" alt="Logo" />
+          <span class="nav-item">Bioskop Online</span>
+        </a>
+      </li>
+      <li>
+        <a href="action.html">
+          <img src="src/action.png" alt="Action Icon" class="nav-icon" />
+          <span class="nav-item">Film Action</span>
+        </a>
+      </li>
+      <li>
+        <a href="comedy.html">
+          <img src="src/comedy.png" alt="Comedy Icon" class="nav-icon" />
+          <span class="nav-item">Film Comedy</span>
+        </a>
+      </li>
+      <li>
+        <a href="horror.html">
+          <img src="src/horror.png" alt="Horror Icon" class="nav-icon" />
+          <span class="nav-item">Film Horror</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <header>
+
+      <h1>Book Your Movie Ticket</h1>
+    </header>
+    <section>
+      <form id="ticketForm" class="ticket-form">
+        <div class="form-group">
+          <label>Genre: </label>
+          <span id="selectedGenre"></span>
+        </div>
+        <div class="form-group">
+          <label for="movie">Movie:</label>
+          <select id="movie" name="movie" required>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="seats">Number of Seats:</label>
+          <input type="number" id="seats" name="seats" min="1" required>
+        </div>
+        <button type="submit" class="submit-button">Book Ticket</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    Jodi Nur Farkhani - Pengembangan Desain website
+    <br>
+    &copy 2024
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
